@@ -28,12 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            questionLabel = new Label();
+            answerButton1 = new Button();
+            answerButton2 = new Button();
+            answerButton3 = new Button();
+            answerButton4 = new Button();
+            logListBox = new ListBox();
+            SuspendLayout();
+            // 
+            // questionLabel
+            // 
+            questionLabel.AutoSize = true;
+            questionLabel.Location = new Point(221, 92);
+            questionLabel.Name = "questionLabel";
+            questionLabel.Size = new Size(50, 20);
+            questionLabel.TabIndex = 0;
+            questionLabel.Text = "label1";
+            // 
+            // answerButton1
+            // 
+            answerButton1.Location = new Point(54, 312);
+            answerButton1.Name = "answerButton1";
+            answerButton1.Size = new Size(94, 29);
+            answerButton1.TabIndex = 1;
+            answerButton1.Text = "button1";
+            answerButton1.UseVisualStyleBackColor = true;
+            // 
+            // answerButton2
+            // 
+            answerButton2.Location = new Point(241, 316);
+            answerButton2.Name = "answerButton2";
+            answerButton2.Size = new Size(94, 29);
+            answerButton2.TabIndex = 2;
+            answerButton2.Text = "button2";
+            answerButton2.UseVisualStyleBackColor = true;
+            // 
+            // answerButton3
+            // 
+            answerButton3.Location = new Point(458, 312);
+            answerButton3.Name = "answerButton3";
+            answerButton3.Size = new Size(94, 29);
+            answerButton3.TabIndex = 3;
+            answerButton3.Text = "button3";
+            answerButton3.UseVisualStyleBackColor = true;
+            // 
+            // answerButton4
+            // 
+            answerButton4.Location = new Point(645, 315);
+            answerButton4.Name = "answerButton4";
+            answerButton4.Size = new Size(94, 29);
+            answerButton4.TabIndex = 4;
+            answerButton4.Text = "button4";
+            answerButton4.UseVisualStyleBackColor = true;
+            // 
+            // logListBox
+            // 
+            logListBox.FormattingEnabled = true;
+            logListBox.Location = new Point(318, 141);
+            logListBox.Name = "logListBox";
+            logListBox.Size = new Size(150, 104);
+            logListBox.TabIndex = 5;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(logListBox);
+            Controls.Add(answerButton4);
+            Controls.Add(answerButton3);
+            Controls.Add(answerButton2);
+            Controls.Add(answerButton1);
+            Controls.Add(questionLabel);
+            Name = "Form1";
             Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label questionLabel;
+        private Button answerButton1;
+        private Button answerButton2;
+        private Button answerButton3;
+        private Button answerButton4;
+        private ListBox logListBox;
     }
 }
